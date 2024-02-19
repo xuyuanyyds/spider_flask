@@ -1,0 +1,15 @@
+.container ul {
+    display: table;
+    padding-top: 10px;
+    text-align: left;
+    margin: 0 auto;
+}
+.container ul li {
+    margin: 20px;
+}
+.container ul li p {
+    color: white;
+}
+.container ul li .question {
+    font-size: 16px;
+}
