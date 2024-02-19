@@ -30,8 +30,10 @@
 <li><strong>行为分析</strong>：分析正常用户与爬虫在访问网站时的行为模式差异，如请求频率、页面浏览顺序等，识别出爬虫的行为，所以进行时间间隔，行为请求的差异来反爬。</li>
 <li><strong>Cookies和Session验证</strong>：服务器通过设置Cookies和Session状态来验证用户，爬虫请求中如果没有正确的Cookies信息可能会被拒绝。</li>
 
-</ol>
-<pre><code class='language-python' lang='python'>def get_random_ua():
+1. 
+
+```python
+def get_random_ua():
     user_agents = [
         // 这个列表将包含常见的User-Agent字符串，用于模拟不同浏览器的请求
     ]
@@ -39,21 +41,19 @@
 
 def get_random_ip():
     proxy_list = [
-        // 这个列表将包含代理服务器的地址，格式一般为&#39;IP:PORT&#39;
+        // 这个列表将包含代理服务器的地址，格式一般为'IP:PORT'
     ]
-    proxies = { &#39;https&#39;: random.choice(proxy_list) }  # 为https请求随机选择一个代理服务器
+    proxies = { 'https': random.choice(proxy_list) }  # 为https请求随机选择一个代理服务器
     return proxies  # 返回代理服务器的设置
 
 def generate_random_cookie():
     // 这个函数负责生成随机的Cookie，用于模拟真实用户的会话
-    cookie_parts = [f&#39;{key}={value}&#39; for key, value in cookie_template.items()]
-    cookie = &#39;; &#39;.join(cookie_parts)  # 生成符合HTTP规范的Cookie字符串
+    cookie_parts = [f'{key}={value}' for key, value in cookie_template.items()]
+    cookie = '; '.join(cookie_parts)  # 生成符合HTTP规范的Cookie字符串
     return cookie  # 返回生成的Cookie字符串
-</code></pre>
-<h2>spider.py运行本程序</h2>
-<pre><code>当前目录下命令行运行
-python spider.py
-</code></pre>
+```
+
+## 
 
 ![222](https://github.com/xuyuanyyds/spider_flask/assets/95127717/0ff54152-616e-4a8e-81e8-513bcf99f57a)
 
