@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+
+    <link rel="stylesheet" href="static/assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="static/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/assets/css/template-style.css">
+    <link href="static/assets/img/favicon.png" rel="icon">
+    <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="static/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="static/assets/css/style.css" rel="stylesheet">
+    <style>
+        .container ul li{
+            color: #ffffff;
+        }
+        .container ul li p {
+            color: #9eccf4;
+            font-size: 17px;
+            margin-top: auto;
+        }
+        .container ul li .question {
+            font-size: 19px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body id="reportsPage">
+    <div class="" id="home">
+{#        --------------------导航栏---------------------#}
+         <nav class="navbar navbar-expand-xl">
+            <div class="container h-100">
+                <a class="navbar-brand" href="#">
+                    <h1 class="tm-site-title mb-0">❥(^_-)电影数据分析 (-_^)❥</h1>
+                </a>
+                <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars tm-nav-icon"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto h-100">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index">
+                                <i class="fa fa-tags" aria-hidden="true"></i>
+                                首页
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="movies">
+                                <i class="fa fa-film" aria-hidden="true"></i>
+                                排行榜
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="tj">
+                                <i class="fa fa-film" aria-hidden="true"></i>
+                                统计
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+{#        --------------------容器1--------------------#}
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="section-title">关于我们</h3>
+                </div>
+            </div>
+{#          -----------------容器2-------------#}
+             <section class="counts section-bg">
+                 <div class="container">
+                    <ul>
+                        <li>
+                            <p class="question ">这是一个什么样的系统？</p>
+                            <p>&emsp;&emsp;该系统致力于让用户简单明了地查看到电影top250排行榜及其详细信息，同时，
+                            用户可以通过统计图的呈现了解到历年电影走势、电影类型分布等相关信息，方便用户根据其信息选择电影。</p>
+                        </li><br><hr />
+                        <li>
+                            <p class="question ">为什么要对数据进行分析统计？</p>
+                            <p>&emsp;&emsp;在当今社会，生活节奏越来越快，人们也越来越注重精神享受，而电影已经成为人们日常生活中不可或缺的
+                                娱乐方式。一部好的电影，除了给人们带来放松和娱乐以外，还可以引发人们的思考和文化的传播。<br>&emsp;&emsp;
+                                从微观上来说，如何在有限的时间内找到感兴趣的、高质量的电影就显得很有必要了。对于观看者而言，观影前的影片选择
+                                尤为重要，每个人都有自己的喜好，有的人偏爱喜剧片，有的人偏爱恐怖片，也有的人喜欢爱情片，针对不同观影者的喜好，
+                                将电影类型进行分类，使用户可以通过可视化数据更好的了解电影的类型；针对喜欢看热门电影的用户，可以通过获取的热门
+                                电影排行，有选择的进行观看；针对注重评分的用户来说，可以从他人的评分和影评中了解到这部电影是否值得去看。对于
+                                从事影视行业的人员而言，对电影的类型和数量进行分析，能在归纳数据的基础上了解其分布；分析历年的影片走势，通过
+                                可视化分析得出的统计图预计未来的发展方向；还可通过相关技术提取影评关键词，更好的了解用户的喜好和需求，制作出
+                                令观众满意的作品。<br>&emsp;&emsp;从宏观上来说，中国电影行业的产业链的经营还不够专业化，现在一些圈外的资
+                                本为了利益，在缺乏专业性的情况下，也开始随大众投入电影行业，在这样的背景下，进行相关数据的分析有利于提高电影
+                                行业的专业性和科学性，提高影片的质量。虽然在庞大的网络体系下，每一条数据看似杂乱无章，但是在进行技术分析后，
+                                都会绘成一张张清晰的偏好图谱，从而制片方可以更好的利用反馈制定精准的宣发策略。</p>
+                        </li><br><hr />
+                        <li>
+                            <p class="question ">如何使用该系统？</p>
+                            <p>1.你可以通过点击菜单”排行榜“查看top250榜单；<br>
+                            2.你可以点击具体的电影名称进入页面查看该电影的详细介绍；<br>
+                            3.你可以通过点击菜单“统计”查看：根据电影评分、电影类型、上映年份等形成的统计图；<br>
+                            </p>
+                        </li><br><hr />
+                        <li>
+                            <p class="question ">温馨提示:</p>
+                            <p>1.数据分析并不能保证电影的艺术价值和质量；<br>
+                            2.即使是真实的数据也会影响分析的有效性；<br>
+                            3.该系统研究的数据有限，不一定能满足所有用户的需求；<br>
+                            4.该系统研究的数据以及分析结果仅供参考。</p>
+                        </li><br><hr />
+                    </ul>
+                </div>
+             </section>
+        </div>
+
+{#----------页脚----------#}
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>爬虫技术</h3>
+            <p>
+              xxxxxx <br>
+              xxxxxx<br><br>
+              <strong>电话：</strong> +182xxxxxxxx<br>
+              <strong>邮箱：</strong> 236xxxxxxxx@qq.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>快速了解我们</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">关于我们</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">服务</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index">首页</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>服务</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">电影top250</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">电影评分</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">电影短评</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">电影热评</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">电影统计图</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>关注我们</h4>
+            <p>输入你的邮箱，带你了解更多电影信息</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="订阅">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">Copyright &copy;2022 xxx</div>
+      <div class="credits"></div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+    </div>
+
+    <script src="static/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="static/assets/js/moment.min.js"></script>
+    <script src="static/assets/js/Chart.min.js"></script>
+    <script src="static/assets/js/bootstrap.min.js"></script>
+    <script src="static/assets/js/tooplate-scripts.js"></script>
+
+</body>
+
+</html>

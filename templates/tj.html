@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>统计</title>
+
+    <link rel="stylesheet" href="static/assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="static/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/assets/css/template-style.css">
+    <link href="static/assets/img/favicon.png" rel="icon">
+    <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="static/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="static/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body id="reportsPage">
+<div class="" id="home">
+    {#        --------------------导航栏---------------------#}
+    <nav class="navbar navbar-expand-xl">
+        <div class="container h-100">
+            <a class="navbar-brand" href="#">
+                <h1 class="tm-site-title mb-0">❥(^_-)电影数据分析 (-_^)❥</h1>
+            </a>
+            <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars tm-nav-icon"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto h-100">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index">
+                            <i class="fa fa-tags" aria-hidden="true"></i>
+                            首页
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="movies">
+                            <i class="fa fa-film" aria-hidden="true"></i>
+                            排行榜
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="tj">
+                            <i class="fa fa-film" aria-hidden="true"></i>
+                            统计
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+    </nav>
+
+
+    {#        --------------------容器1--------------------#}
+    <div class="container">
+        {#            -------------左上角标语-----------#}
+        <div class="row">
+            <div class="col">
+                <h4 class="text-white mt-5 mb-5">电影评分分布图</h4>
+                {#                    <img src="static/assets/img/评分分布.png">#}
+            </div>
+        </div>
+        {#          -----------------容器2-------------#}
+        <section class="counts section-bg">
+            <div class="container">
+                <div id="main" style="width: 100%;height:400px;"></div>
+            </div>
+        </section>
+
+
+        <br>
+
+        <div class="row">
+            <div class="col">
+                <h4 class="text-white mt-5 mb-5">电影类型分布图</h4>
+            </div>
+        </div>
+
+        <section class="counts section-bg">
+            <div class="container">
+                <div id="main1" style="width: 100%;height:400px;"></div>
+            </div>
+        </section>
+
+        <div class="row">
+            <div class="col">
+                <h4 class="text-white mt-5 mb-5">20年内电影上映数量统计图</h4>
+            </div>
+        </div>
+
+        <section class="counts section-bg">
+            <div class="container">
+                <div id="main2" style="width: 100%;height:400px;"></div>
+            </div>
+        </section>
+
+        <div class="row">
+            <div class="col">
+                <h4 class="text-white mt-5 mb-5">电影数量最多的top10年份</h4>
+            </div>
+        </div>
+
+        <section class="counts section-bg">
+            <div class="container">
+                <div id="main3" style="width: 100%;height:400px;"></div>
+            </div>
+        </section>
+    </div>
+
+    {#----------页脚----------#}
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-info">
+                        <h3>爬虫技术</h3>
+                        <p>
+                            xxxxxx <br>
+                            xxxxxx<br><br>
+                            <strong>电话：</strong> +182xxxxxxxx<br>
+                            <strong>邮箱：</strong> 236xxxxxxxx@qq.com<br>
+                        </p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>快速了解我们</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">关于我们</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">服务</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="index">首页</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>服务</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">电影top250</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">电影评分</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">电影短评</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">电影热评</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">电影统计图</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>关注我们</h4>
+                        <p>输入你的邮箱，带你了解更多电影信息</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="订阅">
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">Copyright &copy;2022 xxx</div>
+            <div class="credits"></div>
+        </div>
+    </footer><!-- End Footer -->
+
+
+</div>
+
+<script src="static/assets/js/jquery-3.3.1.min.js"></script>
+<script src="static/assets/js/bootstrap.min.js"></script>
+<script src="static/assets/js/moment.min.js"></script>
+<script src="static/assets/js/tooplate-scripts.js"></script>
+<script src="static/assets/js/main.js"></script>
+<script src="static/assets/js/echarts.min.js"></script>
+{#    -----------评分分布图---------------#}
+<script type="text/javascript">
+    var dom = document.getElementById("main");
+    var myChart = echarts.init(dom);
+    var app = {};
+    option = null;
+    option = {
+        color: ['#4abdbd'],
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                data:{{ rating }},
+                axisTick: {
+                    alignWithLabel: true
+                }
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: [
+            {
+                name: 'num',
+                type: 'bar',
+                barWidth: '60%',
+                data:{{ num }}
+            }
+        ]
+    };
+
+    if (option && typeof option === "object") {
+        myChart.setOption(option, true);
+    }
+
+
+    var dom1 = document.getElementById("main1");
+    var myChart1 = echarts.init(dom1);
+    var app1 = {};
+    option1 = null;
+    option1 = {
+        color: ['#4EFEB3'],
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                data: {{ filmtypes_list|tojson }},
+                axisTick: {
+                    alignWithLabel: true
+                }
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: [
+            {
+                name: 'num',
+                type: 'bar',
+                barWidth: '60%',
+                data:{{ filmtypes_num }}
+            }
+        ]
+    };
+
+    if (option1 && typeof option1 === "object") {
+        myChart1.setOption(option1, true);
+    }
+
+
+    var dom2 = document.getElementById("main2");
+    var myChart2 = echarts.init(dom2);
+    var app2 = {};
+    option2 = null;
+    option2 = {
+        color: ['#4EFEB3'],
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                data: {{ years|tojson }},
+                axisTick: {
+                    alignWithLabel: true
+                }
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: [
+            {
+                name: 'num',
+                type: 'bar',
+                barWidth: '60%',
+                data:{{ years_num }}
+            }
+        ]
+    };
+
+    if (option2 && typeof option2 === "object") {
+        myChart2.setOption(option2, true);
+    }
+
+
+    var dom3 = document.getElementById("main3");
+    var myChart3 = echarts.init(dom3);
+    var app3 = {};
+    option3 = null;
+    option3 = {
+        color: ['#4EFEB3'],
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                data: {{ top10|tojson }},
+                axisTick: {
+                    alignWithLabel: true
+                }
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: [
+            {
+                name: 'num',
+                type: 'bar',
+                barWidth: '60%',
+                data:{{ top10_num }}
+            }
+        ]
+    };
+
+    if (option3 && typeof option3 === "object") {
+        myChart3.setOption(option3, true);
+    }
+</script>
+
+</body>
+
+</html>
